@@ -1,0 +1,17 @@
+{
+  "name": "delivery",
+  "version": "1.0.0",
+  "description": "Wrappers for delivery/shipment APIs",
+  "main": "base.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anson Airoldi <ansonairoldi@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/ansonlouis/delivery",
+  "repository": "github:ansonlouis/delivery",
+  "main": "index.js",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}

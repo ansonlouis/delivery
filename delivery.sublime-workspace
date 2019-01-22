@@ -1,0 +1,652 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"destat",
+				"DestinationState"
+			],
+			[
+				"te",
+				"tracker-entry"
+			],
+			[
+				"tra",
+				"trackingNumber"
+			],
+			[
+				"de",
+				"delivered"
+			],
+			[
+				"parsed",
+				"parseDetailedDescription"
+			],
+			[
+				"parsd",
+				"parseStringDescription"
+			],
+			[
+				"des",
+				"description"
+			],
+			[
+				"trah",
+				"trackingHistory"
+			],
+			[
+				"trhs",
+				"trackingHistory"
+			],
+			[
+				"Trach",
+				"TrackingHistory"
+			],
+			[
+				"descr",
+				"Description"
+			],
+			[
+				"Del",
+				"DeliveryLocation"
+			],
+			[
+				"teal",
+				"text-align"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"fonts",
+				"font-size"
+			],
+			[
+				"sligal",
+				"slideGallery"
+			],
+			[
+				"sei",
+				"sectionId"
+			],
+			[
+				"keu",
+				"keyup"
+			],
+			[
+				"kecode",
+				"keycode"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "usps.js",
+			"settings":
+			{
+				"buffer_size": 5737,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ups.js",
+			"settings":
+			{
+				"buffer_size": 2919,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 167.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Prototype"
+			],
+			[
+				"pakcin",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ansonairoldi/development/delivery"
+	],
+	"file_history":
+	[
+		"/Users/ansonairoldi/development/delivery/delivery.sublime-project",
+		"/Users/ansonairoldi/development/tracking/trackers/dhl.js",
+		"/Users/ansonairoldi/development/tracking/trackers/ups.js",
+		"/Users/ansonairoldi/development/tracking/test-data/ups.json",
+		"/Users/ansonairoldi/development/tracking/trackers/usps.js",
+		"/Users/ansonairoldi/development/tracking/test-data/dhl.json",
+		"/Users/ansonairoldi/development/tracking/test-data/usps.json",
+		"/Users/ansonairoldi/development/tracking/trackers/usps-full.json",
+		"/Users/ansonairoldi/development/tracking/node_modules/usual/package/collection.js",
+		"/Users/ansonairoldi/development/tracking/node_modules/usual/package/model.js",
+		"/Users/ansonairoldi/development/tracking/background.js",
+		"/Users/ansonairoldi/development/tracking/trackers/base.js",
+		"/Users/ansonairoldi/development/tracking/trackers/tracker.js",
+		"/Users/ansonairoldi/development/tracking/tracking-history.js",
+		"/Users/ansonairoldi/development/tracking/styles/_svg.scss",
+		"/Users/ansonairoldi/development/tracking/server.js",
+		"/Users/ansonairoldi/development/tracking/popup.js",
+		"/Users/ansonairoldi/development/tracking/styles/popup.scss",
+		"/Users/ansonairoldi/development/tracking/tracking-item.html",
+		"/Users/ansonairoldi/development/tracking/styles/_tracking-history.scss",
+		"/Users/ansonairoldi/Documents/www/material-design-icons/maps/svg/production/ic_place_48px.svg",
+		"/Users/ansonairoldi/development/tracking/popup.html",
+		"/Users/ansonairoldi/Documents/www/material-design-icons/action/svg/production/ic_visibility_48px.svg",
+		"/Users/ansonairoldi/Downloads/baseline-home-24px.svg",
+		"/Users/ansonairoldi/Documents/www/material-design-icons/alert/svg/production/ic_error_48px.svg",
+		"/Users/ansonairoldi/Documents/www/material-design-icons/action/svg/production/ic_delete_48px.svg",
+		"/Users/ansonairoldi/Documents/www/material-design-icons/action/svg/production/ic_check_circle_48px.svg",
+		"/Users/ansonairoldi/Documents/www/material-design-icons/navigation/svg/production/ic_refresh_48px.svg",
+		"/Users/ansonairoldi/development/tracking/manifest.json",
+		"/Users/ansonairoldi/Documents/www/material-design-icons/action/svg/production/ic_cached_48px.svg",
+		"/Users/ansonairoldi/Documents/www/material-design-icons/content/svg/production/ic_archive_48px.svg",
+		"/Users/ansonairoldi/Documents/www/material-design-icons/content/svg/production/ic_clear_48px.svg",
+		"/Users/ansonairoldi/Documents/www/material-design-icons/action/svg/production/ic_done_48px.svg",
+		"/Users/ansonairoldi/Downloads/baseline-watch_later-24px.svg",
+		"/Users/ansonairoldi/Documents/www/material-design-icons/editor/svg/production/ic_mode_edit_48px.svg",
+		"/Users/ansonairoldi/Downloads/0dff381997be49f30b6ebc1bae4d258b.svg",
+		"/Users/ansonairoldi/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/ansonairoldi/development/tracking/tracking.sublime-project",
+		"/Users/ansonairoldi/development/tracking/webpack.config.js",
+		"/Users/ansonairoldi/Downloads/blah.scss",
+		"/Users/ansonairoldi/development/tracking/node_modules/usual/package/index.js",
+		"/Users/ansonairoldi/Library/Application Support/Sublime Merge/Packages/User/Preferences.sublime-settings",
+		"/Users/ansonairoldi/development/tracking/components/tracking-item.js",
+		"/Users/ansonairoldi/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/ansonairoldi/development/chrome-caniuse/src/popup.html",
+		"/Users/ansonairoldi/development/chrome-caniuse/src/js/components/caniuse.js",
+		"/Users/ansonairoldi/development/chrome-caniuse/src/js/components/feature-search.js",
+		"/Users/ansonairoldi/development/chrome-caniuse/src/js/components/autocomplete.js",
+		"/Users/ansonairoldi/development/chrome-caniuse/src/templates/autocomplete.html",
+		"/Users/ansonairoldi/development/chrome-caniuse/src/js/popup.js",
+		"/Users/ansonairoldi/development/chrome-caniuse/src/styles/_autocomplete.scss",
+		"/Users/ansonairoldi/development/chrome-caniuse/src/styles/_global.scss",
+		"/Users/ansonairoldi/development/chrome-caniuse/src/styles/_feature-support.scss",
+		"/Users/ansonairoldi/development/chrome-caniuse/caniuse.sublime-project",
+		"/Users/ansonairoldi/development/chrome-caniuse/src/js/options.js",
+		"/Users/ansonairoldi/development/chrome-caniuse/src/js/filters.js",
+		"/Users/ansonairoldi/development/chrome-caniuse/src/styles/popup.scss",
+		"/Users/ansonairoldi/development/chrome-caniuse/src/styles/_notes.scss",
+		"/Users/ansonairoldi/development/chrome-caniuse/src/templates/feature-support.html",
+		"/Users/ansonairoldi/development/chrome-caniuse/gulpfile.js",
+		"/Users/ansonairoldi/www/treeadvocate/treeadvocate.sublime-project",
+		"/Users/ansonairoldi/www/treeadvocate/src/styles/partials/_fonts.scss",
+		"/Users/ansonairoldi/www/treeadvocate/dist/scripts/combined.js",
+		"/Users/ansonairoldi/www/treeadvocate/src/styles/styles.scss",
+		"/Users/ansonairoldi/www/treeadvocate/src/index.html",
+		"/Users/ansonairoldi/www/treeadvocate/.gitignore",
+		"/Users/ansonairoldi/www/treeadvocate/gulpfile.js",
+		"/Users/ansonairoldi/www/treeadvocate/src/styles/partials/_contact.scss",
+		"/Users/ansonairoldi/www/treeadvocate/src/server/app.js",
+		"/Users/ansonairoldi/www/treeadvocate/src/styles/partials/_header.scss",
+		"/Users/ansonairoldi/www/treeadvocate/src/scripts/components/slide-gallery.js",
+		"/Users/ansonairoldi/www/treeadvocate/src/scripts/common.js",
+		"/Users/ansonairoldi/www/treeadvocate/src/styles/partials/_quotes.scss",
+		"/Users/ansonairoldi/www/treeadvocate/src/styles/partials/_final.scss",
+		"/Users/ansonairoldi/www/treeadvocate/src/scripts/jquery.mobile.min.js",
+		"/Users/ansonairoldi/Downloads/jquery.mobile.custom/jquery.mobile.custom.min.js",
+		"/Users/ansonairoldi/Downloads/jquery.mobile.custom.zip",
+		"/Users/ansonairoldi/www/treeadvocate/src/styles/_mixins.scss",
+		"/Users/ansonairoldi/www/treeadvocate/src/styles/_variables.scss",
+		"/Users/ansonairoldi/www/treeadvocate/Procfile",
+		"/Users/ansonairoldi/www/treeadvocate/package.json",
+		"/Users/ansonairoldi/Pictures/horseshoe-bend/finals/IMG_1985.jpg",
+		"/Users/ansonairoldi/www/treeadvocate/src/styles/partials/_pointers.scss",
+		"/Users/ansonairoldi/www/treeadvocate/src/styles/device_640.css",
+		"/Users/ansonairoldi/www/treeadvocate/src/app.js",
+		"/Users/ansonairoldi/www/treeadvocate/src/styles/common.scss",
+		"/Users/ansonairoldi/www/treeadvocate/dist/index.html",
+		"/Users/ansonairoldi/www/treeadvocate/src/styles/common.css",
+		"/Users/ansonairoldi/www/treeadvocate/index.html",
+		"/Users/ansonairoldi/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/ansonairoldi/Documents/www/keycodes/app.js",
+		"/Users/ansonairoldi/Documents/www/keycodes/popup.js"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "usps.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5737,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 217.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "ups.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2919,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "delivery.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"sv",
+				"styles/_svg.scss"
+			],
+			[
+				"dh",
+				"trackers/dhl.js"
+			],
+			[
+				"svg",
+				"styles/_svg.scss"
+			],
+			[
+				"tracke",
+				"trackers/tracker.js"
+			],
+			[
+				"popj",
+				"popup.js"
+			],
+			[
+				"trhi",
+				"tracking-history.js"
+			],
+			[
+				"bac",
+				"background.js"
+			],
+			[
+				"se",
+				"server.js"
+			],
+			[
+				"popuh",
+				"popup.html"
+			],
+			[
+				"pops",
+				"styles/popup.scss"
+			],
+			[
+				"usp",
+				"trackers/usps.js"
+			],
+			[
+				"base",
+				"trackers/base.js"
+			],
+			[
+				"s",
+				"styles/_svg.scss"
+			],
+			[
+				"man",
+				"manifest.json"
+			],
+			[
+				"pos",
+				"styles/popup.scss"
+			],
+			[
+				"posc",
+				"styles/popup.scss"
+			],
+			[
+				"bas",
+				"trackers/base.js"
+			],
+			[
+				"ser",
+				"server.js"
+			],
+			[
+				"fil",
+				"src/js/filters.js"
+			],
+			[
+				"_no",
+				"src/styles/_notes.scss"
+			],
+			[
+				"fesu",
+				"src/templates/feature-support.html"
+			],
+			[
+				"filt",
+				"src/js/filters.js"
+			],
+			[
+				"glo",
+				"src/styles/_global.scss"
+			],
+			[
+				"_fo",
+				"src/styles/partials/_fonts.scss"
+			],
+			[
+				"sub",
+				"treeadvocate.sublime-project"
+			],
+			[
+				"subl",
+				"treeadvocate.sublime-project"
+			],
+			[
+				"sty",
+				"src/styles/styles.scss"
+			],
+			[
+				"ind",
+				"src/index.html"
+			],
+			[
+				"cont",
+				"src/styles/partials/_contact.scss"
+			],
+			[
+				"_hea",
+				"src/styles/partials/_header.scss"
+			],
+			[
+				"_h",
+				"src/styles/partials/_header.scss"
+			],
+			[
+				"_fin",
+				"src/styles/partials/_final.scss"
+			],
+			[
+				"_cont",
+				"src/styles/partials/_contact.scss"
+			],
+			[
+				"fin",
+				"src/styles/partials/_final.scss"
+			],
+			[
+				"scs",
+				"src/styles/styles.scss"
+			],
+			[
+				"slid",
+				"src/scripts/components/slide-gallery.js"
+			],
+			[
+				"comj",
+				"src/scripts/common.js"
+			],
+			[
+				"quot",
+				"src/styles/partials/_quotes.scss"
+			],
+			[
+				"_f",
+				"src/styles/partials/_final.scss"
+			],
+			[
+				"qu",
+				"src/styles/partials/_quotes.scss"
+			],
+			[
+				"_mi",
+				"src/styles/_mixins.scss"
+			],
+			[
+				"st",
+				"src/styles/styles.scss"
+			],
+			[
+				"_v",
+				"src/styles/_variables.scss"
+			],
+			[
+				"_he",
+				"src/styles/partials/_header.scss"
+			],
+			[
+				"_co",
+				"src/styles/partials/_contact.scss"
+			],
+			[
+				"vari",
+				"src/styles/_variables.scss"
+			],
+			[
+				"mix",
+				"src/styles/_mixins.scss"
+			],
+			[
+				"_va",
+				"src/styles/_variables.scss"
+			],
+			[
+				"style",
+				"src/styles/styles.scss"
+			],
+			[
+				"com",
+				"src/scripts/common.js"
+			],
+			[
+				"_",
+				"src/styles/partials/_header.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/ansonairoldi/development/chrome-underscore/underscore.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 212.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
