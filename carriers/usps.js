@@ -1,6 +1,6 @@
 // usps.js
 
-const BaseTracker = require('./base');
+const BaseTracker = require('../base');
 const axios = require('axios');
 const xml2js = require('xml2js');
 
@@ -129,7 +129,7 @@ module.exports = class USPSTracker extends BaseTracker{
   parseDetailedDescription(detail){
     let status = {
       description : detail.Event[0],
-      date : this.createDateString(`${detail.EventDate[0]} ${detail.EventTime[0]}`),
+      date : this.createDateString(`${detail.EventDate[0]} ${detail.EventTime[0]}`, 'MMMM DD, YYYY H:mm a'),
       location : null
     };
 

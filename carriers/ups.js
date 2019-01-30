@@ -1,6 +1,6 @@
 // ups.js
 
-const BaseTracker = require('./base');
+const BaseTracker = require('../base');
 const axios = require('axios');
 
 
@@ -63,34 +63,70 @@ module.exports = class UPSTracker extends BaseTracker{
         return Promise.reject({error:error, code:code});
       }
 
-      if(response.TrackResponse.Shipment.Package){
+      if(response.TrackResponse.Shipment){
 
-        let pkg = response.TrackResponse.Shipment.Package;
-        data.trackingNumber = pkg.TrackingNumber;
-        data.url = this.getUrl(data.trackingNumber);
+        let shipment = response.TrackResponse.Shipment;
 
-        let activity = pkg.Activity;
+        if(shipment.ShipmentAddress){
 
-        data.currentStatus = {
-          description : activity.Status.Description,
-          date : this.createDateString(activity.Date),
-          location : activity.ActivityLocation.Address.City + ', ' + activity.ActivityLocation.Address.StateProvinceCode
-        };
-
-        if(activity.Status.Description === "Delivered"){
-          data.delivered = true;
-          data.deliveryDate = this.createDateString(activity.Date);
-        }else{
-          data.deliveryDate = this.createDateString(pkg.DeliveryDetail.Date);
+          let destination = this.parseDestination(shipment.ShipmentAddress);
+          if(destination){
+            data.destination = destination;
+          }
         }
 
+        if(shipment.DeliveryDetail && shipment.DeliveryDetail.Date){
+          data.deliveryDate = this.createDateString(shipment.DeliveryDetail.Date);
+        }
+
+        if(shipment.Package){
+
+          let pkg = shipment.Package;
+          data.trackingNumber = pkg.TrackingNumber;
+          data.url = this.getUrl(data.trackingNumber);
+
+          let activity = pkg.Activity;
+
+          data.currentStatus = {
+            description : activity.Status.Description,
+            date : this.createDateString(activity.Date),
+          };
+
+          if(activity.ActivityLocation && activity.ActivityLocation.Address && activity.ActivityLocation.Address.City){
+            data.currentStatus.location = activity.ActivityLocation.Address.City + ', ' + activity.ActivityLocation.Address.StateProvinceCode;
+          }
+
+          if(activity.Status.Description === "Delivered"){
+            data.delivered = true;
+            data.deliveryDate = this.createDateString(activity.Date);
+          }
+          else if(pkg.DeliveryDetail && pkg.DeliveryDetail.Date){
+            data.deliveryDate = this.createDateString(pkg.DeliveryDetail.Date);
+          }
+
+        }
       }
+      
     }
     catch(error){
       return Promise.reject({error : error});
     }
 
     return data;
+  };
+
+  parseDestination(shipmentAddresses){
+    if(Array.isArray(shipmentAddresses)){
+      let shipTo = shipmentAddresses.find(item => {
+        return item.Type && item.Type.Description.search(/shipto/i) > -1;
+      });
+      if(shipTo && shipTo.Address && shipTo.Address.City){
+        let city = this.toSentenceCase(shipTo.Address.City);
+        let zip = shipTo.Address.PostalCode;
+        let state = shipTo.Address.StateProvinceCode;
+        return `${city}, ${state} ${zip}`;
+      }
+    }
   };
 
   parseTrackingNumber(trackingString){
@@ -109,8 +145,8 @@ module.exports = class UPSTracker extends BaseTracker{
     return trackingNumber;
   };
 
-  getUrl(){
-
+  getUrl(trackingNumber){
+    return `https://www.ups.com/track?loc=en_US&tracknum=${trackingNumber}`;
   };
   
 };

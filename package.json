@@ -1,6 +1,6 @@
 {
-  "name": "delivery",
-  "version": "1.0.0",
+  "name": "deliveries",
+  "version": "1.0.5",
   "description": "Wrappers for delivery/shipment APIs",
   "main": "base.js",
   "scripts": {

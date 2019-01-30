@@ -1,6 +1,6 @@
 // usps.js
 
-const BaseTracker = require('./base');
+const BaseTracker = require('../base');
 const axios = require('axios');
 
 

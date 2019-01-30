@@ -62,7 +62,6 @@ module.exports = class Trackers{
         orderedTrackers.unshift(tracker);
       }else{
         console.log("Not a match:", key);
-        orderedTrackers.push(tracker);
       }
     }
     return orderedTrackers;
