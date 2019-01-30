@@ -17,7 +17,7 @@ module.exports = class USPSTracker extends BaseTracker{
 
     let xml = `<?xml version="1.0" encoding="UTF-8" ?><TrackRequest USERID="${this.userId}"><TrackID ID="${trackingNumber}"></TrackID></TrackRequest>`;
     xml = `<?xml version="1.0" encoding="UTF-8"?><TrackFieldRequest USERID="${this.userId}"><Revision>1</Revision><ClientIp>127.0.0.1</ClientIp><SourceId>myself</SourceId><TrackID ID="${trackingNumber}" /></TrackFieldRequest>`;
-    
+
     let url = `https://secure.shippingapis.com/ShippingAPI.dll?API=TrackV2&XML=${xml}`;
 
     return axios({
@@ -106,6 +106,14 @@ module.exports = class USPSTracker extends BaseTracker{
           if(response.currentStatus.description.search(/delivered/i) > -1){
             response.delivered = true;
             response.deliveryDate = response.currentStatus.date;
+          }
+
+          if(!response.deliveryDate){
+            if(matchingData.ExpectedDeliveryDate && matchingData.ExpectedDeliveryDate.length){
+              response.deliveryDate = this.createDateString(matchingData.ExpectedDeliveryDate[0], 'MMMM DD, YYYY');
+            }else if(matchingData.PredictedDeliveryDate && matchingData.PredictedDeliveryDate.length){
+              response.deliveryDate = this.createDateString(matchingData.PredictedDeliveryDate[0], 'MMMM DD, YYYY');
+            }
           }
 
         }
